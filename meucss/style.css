@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-shadow:border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/nublado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    padding: 40px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 400px;
+    border: solid 3px rgb(48, 170, 11);
+    border-radius: 5px;
+    overflow: hidden;
+    transition-duration: 2s;
+    box-shadow: 2px 3px 15px;
+}
+.texto {
+    color: rgb(248, 243, 243);
+    position: relative;
+    left:500px;
+    transition:left 2s;
+}
+.container:hover .texto {
+    left: 0;
+}
+.container:hover {
+    backdrop-filter: blur(0);
+}
+h1 {
+    margin-bottom: 10px;
+}
+p {
+    line-height: 30px;
+    font-weight: bold;
+}
